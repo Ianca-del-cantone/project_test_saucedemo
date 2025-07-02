@@ -1,4 +1,3 @@
-from time import sleep
 from selenium import webdriver
 from login_page import LoginPage
 from produto_page import ProdutoPage
@@ -15,42 +14,34 @@ options.add_experimental_option("prefs", {
 
 driver = webdriver.Chrome(options=options)
 driver.maximize_window()
+driver.implicitly_wait(10)
 
 
 login = LoginPage(driver)
 login.abrir_pagina()
-time.sleep(1)
 
 login.preencher_usuario("standard_user")
-time.sleep(1)
 
 login.preencher_senha("secret_sauce")
-time.sleep(1)
 
-login.clicar_button()
-time.sleep(2)
+login.clicar_botao_login()
+
 
 comprar = ProdutoPage(driver)
+
 comprar.clicar_produto()
-time,sleep(2)
 
 comprar.adicionar_ao_carrinho()
-time.sleep(2)
 
 comprar.ir_para_carrinho()
-time.sleep(2)
 
 comprar.ir_para_checkout()
-time.sleep(2)
 
 comprar.preencher_dados()
-time.sleep(2)
 
 comprar.continuar_compra()
-time.sleep(2)
 
 comprar.finalizar_compra()
-time.sleep(2)
 
 mensagem = comprar.validar_compra_sucesso()
 if "Thank you for your order" in mensagem:

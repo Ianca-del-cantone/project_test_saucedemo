@@ -15,7 +15,7 @@ class LoginPage:
     def preencher_senha(self, senha):
         self.driver.find_element(By.ID, "password").send_keys(senha)
 
-    def clicar_button(self):
+    def clicar_botao_login(self):
         self.driver.find_element(By.ID,"login-button").click()
 
 
