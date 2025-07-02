@@ -1,6 +1,6 @@
 # Project Test Saucedemo
 
-Projeto de automação de testes desenvolvido como parte dos meus estudos em Quality Assurance (QA).
+Projeto de automação de testes, desenvolvido como parte dos meus estudos em Quality Assurance (QA).
 
 ## 🎯 Objetivo
 
@@ -20,4 +20,4 @@ Automatizar cenários no site [SauceDemo](https://www.saucedemo.com/), incluindo
 
 ## 📌 Status
 
-Em desenvolvimento, como parte da construção do meu portfólio em QA.
+Em desenvolvimento, como parte da construção do meu portfólio.
