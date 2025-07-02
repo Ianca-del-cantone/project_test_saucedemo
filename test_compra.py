@@ -4,7 +4,6 @@ from produto_page import ProdutoPage
 from selenium.webdriver.chrome.options import Options
 import time
 
-
 options = Options()
 options.add_argument("--incognito")
 options.add_experimental_option("prefs", {
