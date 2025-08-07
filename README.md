@@ -1,4 +1,4 @@
-# Project Test Saucedemo
+# Projeto de automação de testes na aplicação Saucedemo
 
 Projeto de automação de testes, desenvolvido como parte dos meus estudos em Quality Assurance (QA).
 
